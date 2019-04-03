@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+       #parent1, #parent2, #parent3{
+           background: green;
+           width: 800px;
+           margin: 30px;
+           color: white;
+           position: relative;
+           height: 400px;
+           font-size:20px;
+       }
+        #child1, #child2, #child3{
+            background: tomato;
+            position: absolute;
+            width: 50%;
+        }
+        #child1{
+            left: 0;
+            top: 0;
+        }
+        #child2{
+            left: 50%;
+            transform: translate(-50%,-50%);
+            top: 50%;
+        }
+        #child3{
+            bottom: 0;
+            right: 0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Căn trái, phải giữa khi 1 thẻ block nằm trong 1 thẻ block khác</h1>
+    <p>và ta sẽ căn trái, phải , giữa theo thẻ mẹ</p>
+    <p>khi căn vị trí theo thẻ mẹ sử dụng kỹ thuật position</p>
+    <p>1 - cần đặt position cho thẻ mẹ là ralative</p>
+    <p>2 - cần đặt position cho thẻ con là absolute và đặt các thuộc tính css vị trí</p>
+    <p>như top,left , right, bottom theo nhu cầu thực tế</p>
+    <p>Căn theo chiều dọc bên trên top:0</p>
+    <p>căn center top:50% and left:50% and transform: translate(-50%,-50%);</p>
+    <p>Căn theo chiều dọc bên dưới bottom:0</p>
+
+    <div id="parent1">
+        <div id="child1">
+            Căn top
+            <img src="dog.jpg" alt="">
+        </div>
+    </div>
+    <div id="parent2">
+        <div id="child2">
+            Căn center
+            <img src="dog.jpg" alt="">
+        </div>
+    </div>
+    <div id="parent3">
+        <div id="child3">
+            Căn bottom
+            <img src="dog.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
