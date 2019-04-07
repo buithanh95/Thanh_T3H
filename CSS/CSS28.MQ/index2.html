@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        /*default style*/
+        .wrap{
+            overflow: auto;
+        }
+        .wrap .sidebar{
+            width: 20%;
+            float: left;
+        }
+        .wrap #main{
+            width: 80%;
+            float: right;
+            background: #223344;
+            color: white;
+        }
+        .menu{
+            margin: 2px;
+            padding: 5px;
+            background: #cccccc;
+        }
+        ul{
+            list-style: none;
+        }
+        @media screen and (max-width: 680px){
+            /*từ độ rộng 480px trở xuống sẽ áp dụng đoạn code css bên dưới
+            max-width(di xuống) min-width(đi lên)*/
+            .wrap .sidebar{
+                width: 100%;
+                float: none;
+            }
+            .wrap #main{
+                width: 95%;
+                float: none;
+                background: orange;
+                margin:0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sidebar">
+            <ul>
+                <li class="menu"><a href="#">The gioi</a></li>
+                <li class="menu"><a href="#">Van hoa</a></li>
+                <li class="menu"><a href="#">Chinh tri</a></li>
+                <li class="menu"><a href="#">The thao</a></li>
+                <li class="menu"><a href="#">Thoi su</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1>Resize the browser window to see the effect!</h1>
+            <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider.
+        </div>
+    </div>
+</body>
+</html>
