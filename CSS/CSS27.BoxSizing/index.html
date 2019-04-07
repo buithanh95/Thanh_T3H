@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Title</title>
+    <style type="text/css">
+        .box1{
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            border: 2px solid red;
+            background: #223344;
+        }
+        .box2{
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            border: 2px solid orange;
+            box-sizing: border-box;
+            background: tomato;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Box Sizing</h1>
+
+    <p>Box-sizing có giá trị mặc định là content-box</p>
+    <p>content-box => thuộc tính width trong css là độ rộng của content</p>
+    <p>content-box => thuộc tính height trong css là độ cao của content</p>
+    <p>border-box => thuộc tính width trong css là độ rộng của Box model</p>
+    <p>border-box => thuộc tính height trong css là độ rộng của Box model</p>
+
+    <br>cần phân biệt
+    <br> width content
+    <br>width padding
+    <br>width border
+    <br>width của box model
+
+    <br>height content
+    <br>height padding
+    <br>height border
+    <br>height của box model
+
+
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+</body>
+</html>
