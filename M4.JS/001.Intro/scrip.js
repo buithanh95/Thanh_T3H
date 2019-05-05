@@ -1,0 +1,1 @@
+alert("Load từ file bên ngoài")
