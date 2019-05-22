@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>thao tác bằng jquery trên cay DOM</h1>
+<div class="container">
+    <nav>
+        <ul>
+            <li>trang chủ</li>
+            <li>sản phâm </li>
+            <li>giới thiệu</li>
+            <li>tin túc</li>
+            <li>liên hệ</li>
+        </ul>
+    </nav>
+</div>
+<div style="margin-top: 30px">
+    <button id="control">tìm children</button>
+</div>
+
+<pre style="padding: 20px">
+    các phương thức tìm hậu duệ
+    children() : trả về tất cả các thẻ nằm bên trong là con trực tiếp của selector
+
+</pre>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#control").on("click",function () {
+            $("ul").children().css("border", "5px solid red").css("padding","30px");
+
+        });
+
+    })
+</script>
+</body>
+</html>

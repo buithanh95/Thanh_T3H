@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hàm trong js</h1>
+<p>Hàm trong js là 1 tập hợp gồm nhiều câu lệnh được gom nhóm lại thành 1 module để thực hiện những tính năng cụ thể</p>
+<p>Hàm tính chu vi hình tròn</p>
+<p>Hàm dùng tính chu vi hay diện tích hình chữ nhật</p>
+<p>Hàm dùng để chuyển độ C thành độ F</p>
+<p>Hàm Chuyển đổi dặm thành km</p>
+
+<pre>
+    cú pháp:
+    function tên_hàm (tham_số_1, tham_số_2,....){
+        //code thực thi hàm
+    }
+    gọi hàm:
+        tên_hàm(giá_tri_1, giá_trị_2,....);
+    hoặc
+        tên_hàm(biến 1, biến 2,...)
+
+    <h1>xây dựng 2 function</h1>
+    <ol>
+        <li>tính chi vi hình tròn</li>
+        <li>tính diện tích hình tròn</li>
+    </ol>
+
+    <script type="text/javascript">
+        function chuvihinhtron(r) {
+            var chuvi;
+            chuvi = r * 2 * 3.14;
+            return chuvi;
+        }
+        function dientichhinhtron(r) {
+            var dientich;
+            dientich = r * r * 3.14;
+            return dientich;
+        }
+
+        console.log(chuvihinhtron(2));
+        console.log(dientichhinhtron(3));
+
+    </script>
+
+    <script type="text/javascript">
+        function tinhtong(a,b) {
+            var c;
+            c = a + b;
+            // return kết thúc hàm tại đây và trả về giá triij phía sau câu lệnh return
+            return c;
+        }
+        var x = 5;
+        var y = 6;
+        var ketqua = tinhtong(x,y);
+        console.log(ketqua);
+    </script>
+</pre>
+</body>
+</html>

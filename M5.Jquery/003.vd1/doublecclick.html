@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    trong document ready sẽ có 1 function của js
+    nhưng mà không có tên và nó đóng  vai trò là callback
+    callback là gì? callback là hàm mà sẽ được chạy sau khi
+    1 sự kiện hc hiệu ứng đã đc xẩy ra
+    ví dụ : sau khi các bạn nhán tin hay gọi điện thì nhà mạng sẽ
+    tiến hành trừ tiền trong tài khoản
+    hành động trừ tiền sẽ diễn ra sau cuộc gọi
+    và nó là callback của cuộc gọi hay tin nhán đó
+</div>
+<div style="margin-top: 30px">
+    <button type="button" id="control">click</button>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function ( ) {
+            //sự kiện click
+            //truyền vào method click() callback
+            $("#control").dblclick(function () {
+                //phương thức css trong jquery can thiệp vào css của đối tượng
+                // và 2 tham số . tham số 1 là tên của thuộc tính css
+                // tham số thứ 2 là giá trị cảu thuộc tính đó
+                $(".container").css("background","orange ");
+                $(".container").css("padding","30px");
+                $(".container").css("color","green");
+
+            });
+        });
+    </script>
+</body>
+</html>

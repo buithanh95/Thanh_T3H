@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    vòng lặp là quá trình lặp đi lặp lại
+    có bước bắt đầu
+    có bước kết thúc
+    và nó có sự thay đổi sau mỗi vòng lặp
+    1 - for
+    2 - whilte
+    3 - do .. whilte
+
+    cú pháp for:
+    for(bước khởi đầu; điều kiện vòng lặp; sự thay đổi sau mỗi vòng lặp){
+        //code thực thi trong vòng lặp
+    }
+
+    cú pháp whilte:
+    bước khởi đầu của vòng lặp whilte
+    whilte(điều kiện vòng lặp){
+
+        sự thay đổi của vòng lặp whilte nhớ đặt ở cuối vòng whilte
+    }
+</pre>
+<script type="text/javascript">
+    /*for(var i = 0; i < 10; i++){
+        console.log(i);
+    }*/
+    var i = 0;
+    while (i < 10) {
+        console.log(i);
+        i++;
+    }
+    console.log("---------------------");
+    // cách 1
+    /*for(var i = 0; i < 10; i += 2) {
+        console.log(i);
+    }*/
+
+    var i = 0;
+    while (i<10){
+        console.log(i);
+        i +=2;
+    }
+    console.log("--------------------------");
+    // cách 2
+   /* for(var i = 0; i < 10; i++) {
+        if ( (i%2) == 0 )
+
+            console.log(i);
+        }
+    }*/
+
+
+   while (i<10){
+       if(i%2 == 0 ){
+           console.log(i);
+       }
+       i++;
+   }
+    console.log("--------------------------");
+   /* var students = ["nguyen a", "nguyen b", "nguyen c"];
+    for (var i = 0; i < students.length; i++) {
+        console.log(students[i]);
+    }*/
+   var students = ["nguyen a", "nguyen b", "nguyen c"];
+   var i=0;
+   while ( i < students.length){
+       console.log(students[i]);
+       i++;
+   }
+</script>
+</body>
+</html>

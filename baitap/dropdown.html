@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            background: #223344;
+        }
+        a{
+            display: block;
+            padding: 10px 20px;
+        }
+        .menu{
+            background: white;
+        }
+        .menu>li{
+            float: left;
+            position: relative;
+        }
+        .menu>li:hover{
+            background: grey;
+        }
+        .menu>li:hover >a{
+            background: grey;
+            color: white;
+        }
+        .submenu1,.submenu2{
+            display: none;
+            border: 1px solid red;
+        }
+        .submenu1{
+             position: absolute;
+
+             width: 150px;
+            z-index: 1;
+            border-top: 2px solid #0C9926;
+         }
+
+        li:hover>.submenu1{
+            display: block;
+        }
+        .submenu1>li{
+            background: #FFFF00;
+            position: relative;
+        }
+        .submenu1>li:hover{
+            background: #0b2e13;
+        }
+        .submenu2{
+            position: absolute;
+            top:0;
+            left: 100%;
+            width: 150px;
+            z-index: 1;
+        }
+
+        li:hover>.submenu2{
+            display: block;
+        }
+        .submenu2>li{
+            background: #cccccc;
+        }
+        .submenu2>li:hover{
+            background: white;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li>
+            <a href="">Menu</a>
+            <ul class="submenu1">
+                <li>
+                    <a href="">Menu 1</a>
+                    <ul class="submenu2">
+                        <li><a href="">Menu 1.1</a></li>
+                        <li><a href="">Menu 1.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Menu 2</a></li>
+                <li><a href="">Menu 3</a></li>
+                <li>
+                    <a href="">Menu 4</a>
+                    <ul class="submenu2">
+                        <li><a href="">Menu 4.1</a></li>
+                        <li><a href="">Menu 4.2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="">Settings</a></li>
+        <li><a href="">Contack</a></li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>sử lý thời gian trong JS</h1>
+<h1>phương thức dùng để lấy time trong js</h1>
+<p id="demo"></p>
+<script type="text/javascript">
+    // khởi tạo đối tượng thời gian từ 1 chuỗi xác định
+
+    var d = new Date();
+    //lấy năm
+    console.log(d.getFullYear());
+    //chú ý js đếm tháng từ 0
+    console.log(d.getMonth());
+    //lấy ngày
+    console.log(d.getDate());
+    //lấy giờ
+    console.log(d.getHours());
+    //lấy phút
+    console.log(d.getMinutes());
+    //lấy giây
+    console.log(d.getSeconds());
+    document.getElementById("demo").innerHTML = d;
+</script>
+</body>
+</html>

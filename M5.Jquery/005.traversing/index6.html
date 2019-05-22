@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>thao tác bằng jquery trên cay DOM</h1>
+<div class="container">
+    <nav>
+        <ul>
+            <li class="home"><a href="">Trang chủ</a> </li>
+            <li class="new"><a href="">Tin tức</a> </li>
+            <li class="intro"><a href="">Giới thiệu</a> </li>
+            <li class="contact"><a href="">Liên hệ</a> </li>
+            <li class="product"><a href="">Sản phẩm</a> </li>
+        </ul>
+    </nav>
+</div>
+<div style="margin-top: 30px">
+    <button id="control">tìm find()</button>
+</div>
+
+<pre style="padding: 20px">
+    các phương thức tìm hậu duệ
+    find(filter) : trả về tất cả các thẻ nằm ben trong phụ thuộc filter mà các bạn truyền vào
+
+</pre>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#control").on("click",function () {
+            $("ul").find("a").css("border", "5px solid red").css("padding","30px");
+
+        });
+
+    })
+</script>
+</body>
+</html>

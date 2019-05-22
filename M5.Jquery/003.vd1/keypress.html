@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>sự kiện nhấn bàn phím</h1>
+<input type="text" id="user" name="user" value="">
+<p></p>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input#user").keypress(function () {
+            // method .val() lấy giá trị bên trong ô input
+            var text = $(this).val();
+            // method html() đc sử dụng để lấy ra hc sử html của select
+            // nếu mà html() sẽ lấy ra
+            // nếu mà html(text) sửa nội dung html của thẻ đó thành chuỗi mà biến text chứa
+            $("p").html(text);
+
+        });
+
+    });
+</script>
+</body>
+</html>

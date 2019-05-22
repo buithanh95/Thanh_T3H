@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    vòng lặp là quá trình lặp đi lặp lại
+    có bước bắt đầu
+    có bước kết thúc
+    và nó có sự thay đổi sau mỗi vòng lặp
+    1 - for
+    2 - whilte
+    3 - do .. whilte
+
+    cú pháp for:
+    for(bước khởi đầu; điều kiện vòng lặp; sự thay đổi sau mỗi vòng lặp){
+        //code thực thi trong vòng lặp
+    }
+
+    cú pháp whilte:
+    bước khởi đầu của vòng lặp whilte
+    whilte(điều kiện vòng lặp){
+
+        sự thay đổi của vòng lặp whilte nhớ đặt ở cuối vòng whilte
+    }
+
+    cú pháp do ...whilte
+
+    khởi đầu của vòng lặp
+    do {
+        //code thực thi trong vngf lặp
+        sự thay đổi sau mỗi vòng lặp (nên đặt ở cuối của do
+    }while(Điều kiện để vòng lặp chạy);
+
+    *** sự khác biệt giữa vòng lặp while và do while
+    nếu điều kiện đúng thì cả 2 vòng lặp đều chạy
+    nhưng lần đầu tiên cho dù điều kiện sai thì vòng lặp do while nó vẫn chạy lần đầu tiên
+    còn vòng lặp while chỉ chạy khi điều kiện đúng
+    do ... while sẽ luôn chạy lần đầu tiên bất kể điều kiện đúng hay sai
+    từ lần thứ 2 trở đi nó mới check điều kiện để đảm bảo chỉ chạy khi mà điều kiện là true
+</pre>
+<script type="text/javascript">
+    /*for(var i = 0; i < 10; i++){
+        console.log(i);
+    }*/
+    /*var i = 0;
+    while (i < 10) {
+        console.log(i);
+        i++;
+    }*/
+
+
+    console.log("---------------------");
+    // cách 1
+    /*for(var i = 0; i < 10; i += 2) {
+        console.log(i);
+    }*/
+
+    /*var i = 0;
+    while (i<10){
+        console.log(i);
+        i +=2;
+    }*/
+
+    var i = 11;
+    do{
+        console.log(i);
+        i++;
+    } while (i<10);
+
+    console.log("--------------------------");
+    // cách 2
+   /* for(var i = 0; i < 10; i++) {
+        if ( (i%2) == 0 )
+
+            console.log(i);
+        }
+    }*/
+
+
+   /*while (i<10){
+       if(i%2 == 0 ){
+           console.log(i);
+       }
+       i++;
+   }*/
+    var i = 11;
+    do{
+        console.log(i);
+        i++;
+    }while (i%2);
+
+    console.log("--------------------------");
+   /* var students = ["nguyen a", "nguyen b", "nguyen c"];
+    for (var i = 0; i < students.length; i++) {
+        console.log(students[i]);
+    }*/
+  /* var students = ["nguyen a", "nguyen b", "nguyen c"];
+   var i=0;
+   while ( i < students.length){
+       console.log(students[i]);
+       i++;
+   }*/
+  var i =0;
+   var students = ["nguyen a", "nguyen b", "nguyen c"];
+   do {
+       console.log(students[i]);
+       i++;
+   }while (i < students.length);
+
+</script>
+</body>
+</html>
