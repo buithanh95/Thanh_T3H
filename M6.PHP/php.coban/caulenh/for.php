@@ -32,7 +32,7 @@ echo "in ra các số từ 0 đến 19 nhưng chỉ in số chẵn";
     }
 
 echo "in ra các số từ 0 đến 19 nhưng chỉ in số chẵn";
-    for ($i = 0; $i <20; i++){
+    for ($i = 0; $i <20; $i++){
         if($i % 2 == 0 ){
             echo "<br>" .$i;
         }
