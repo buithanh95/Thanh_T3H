@@ -14,7 +14,7 @@
     quy tắc khai bào tên biến
     1.  tên biến k đc sử dụng dấu cách và dấu tiếng việt
     2.  tên biến chiwr đc chứa các chữ cái và chữ số và _
-    3.  tên biến hải bắt đầu bằng 1 chữ cái
+    3.  tên biến phải bắt đầu bằng 1 chữ cái
 </pre>
 <?php
     $tensinhvien = "nguyen van a";

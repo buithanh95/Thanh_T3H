@@ -12,7 +12,7 @@ session_status();
 <?php
 // tạo ra 1 session trong php
 $_SESSION['user_name'] = "admin";
-$_SESSION['user_email'] = "admin#gmail.com";
+$_SESSION['user_email'] = "admin@gmail.com";
 $_SESSION['user_location'] = "hà nội";
 
 // xem tất cả các session
